@@ -1,5 +1,5 @@
-FROM python:3.9.20-bullseya
+FROM python:3.15.0a3-trixie
 WORKDIR /app
 COPY app.py app.py
 RUN pip install flask
-CMD ["python3","-m","flask","run"] 
+CMD ["python3","-m","flask","run","--host=0.0.0.0"] 
