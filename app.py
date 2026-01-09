@@ -1,0 +1,5 @@
+import flask from Flask
+app = Flask(__name__)
+@app.route("/")
+def lw():
+    print("Hello flask from CICD")
