@@ -2,4 +2,4 @@ from flask import Flask
 app = Flask(__name__)
 @app.route("/")
 def lw():
-    print("Hello flask from CICD")
+    return "Hello flask from CICD"
