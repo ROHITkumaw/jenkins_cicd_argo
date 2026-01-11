@@ -1,0 +1,20 @@
+{
+  "kind": "SealedSecret",
+  "apiVersion": "bitnami.com/v1alpha1",
+  "metadata": {
+    "name": "mysql-secret",
+    "namespace": "default"
+  },
+  "spec": {
+    "template": {
+      "metadata": {
+        "name": "mysql-secret",
+        "namespace": "default"
+      },
+      "type": "kubernetes.io/basic-auth"
+    },
+    "encryptedData": {
+      "password": "AgBujOPIwFwHfq4mdi82Klm0NRQs+7JMISVNNl1Z+z7pai/GOIB12hB2IXMFjH/CaG9L1NFqnERjgbeC/ntonH9/0mMtgVdd1ucfcz6bClUU99n2A1/VjqcFWm/IXeXgnS4Wa4mPbAHC6PuNHp0OreeICM1pSN/3T5G6ghdHtYnYwbaLfwwVEWX3gpZjQyN8wmycTpxpX7/ccD5fC/qXNr3+Ogr7YBw8tGOtZcJwA562WDS0+al+fAqhqn8wiMuBj/rBMgf938c5FHDiuxD+d7tl0Auc6kN1exSvChlrXooQ2uutJc2RBUgvlYUJixCJGj1K17HduAVR6EnyOCftrvLMnCevj5XeCszZpd95Nmq+k2P2kN8K9LAZQheg3uekJl+pw9+b4LdTIqAsWc4kELWOTkazOPU77os8CF9WQJWfOfJiFDnEBNne/CdA73dYOfidVIPAyc+q+LQn211h/x08ADYORyuJK4OiT4/Z9ry2NE20rP2qdTlcNCmpKzSr/itDI4J8FOIO05wX5tyd6KJeDo7pqEHrYonMShvtR99T4XUKFbp13Z/3euc+L5kq/A5kMaYS9mxvKO66t1Q2s2lzcPnK02WLSU41Kj/T97zvRzdRWr4ZLDJU1uDN8S6OwxrtXS2CjX8moFRuPxh8wu0H/PqoOy0djMdYgkH8ED2xLm1UWfvIzAg3uctnFk1rwT3HuUvDDlU="
+    }
+  }
+}

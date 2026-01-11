@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: mydbsql
+  name: mydbsql
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mydbsql
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: mydbsql
+    spec:
+      containers:
+      - image: mysql
+        name: mysql
+        env:
+        - name: MYSQL_ROOT_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: mysql-secret
+              key: password 
+        resources: {}
+status: {}
